@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chat Room</title>
+</head>
+
+<body style="font-family:sans-serif">
+
+<h2>Friends Chat</h2>
+
+<input id="msg" placeholder="Type message">
+<button onclick="send()">Send</button>
+
+<ul id="messages"></ul>
+
+<script>
+function send(){
+var m=document.getElementById("msg").value;
+
+var li=document.createElement("li");
+li.textContent=m;
+
+document.getElementById("messages").appendChild(li);
+}
+</script>
+
+</body>
+</html>
